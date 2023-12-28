@@ -15,7 +15,7 @@ class ProductSeeder extends Seeder
     {
         $products = [
             [
-                'name' => "Ko'ylak",
+                'name' => "Koylak",
                 'code' => "00000001",
             ],
             [

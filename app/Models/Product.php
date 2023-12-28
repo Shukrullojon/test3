@@ -20,4 +20,8 @@ class Product extends Model
         'name',
         'code',
     ];
+
+    public function pm(){
+        return$this->hasMany(ProductMaterial::class,'product_id','id');
+    }
 }

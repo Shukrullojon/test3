@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::group(['prefix' => 'result', 'namespace' => '\App\Http\Controllers\Api'], function () {
+    Route::get('/info', 'ResultController@info');
+});
